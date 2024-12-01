@@ -1,0 +1,26 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\ESP32IDE\PJT\WIFI_STATION_SERVER\build\bootloader\esp-idf\esptool_py && D:\ESP32IDE\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe D:/ESP32IDE/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/ESP32IDE/PJT/WIFI_STATION_SERVER/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/http_server/http_server.c.obj
+D:/ESP32IDE/PJT/WIFI_STATION_SERVER/main/http_server/http_server.c: In function 'hello_get_handler':
+D:/ESP32IDE/PJT/WIFI_STATION_SERVER/main/http_server/http_server.c:249:17: warning: unused variable 'resp_str' [-Wunused-variable]
+  249 |     const char* resp_str = (const char*) "Hello World";
+      |                 ^~~~~~~~
+D:/ESP32IDE/PJT/WIFI_STATION_SERVER/main/http_server/http_server.c: At top level:
+D:/ESP32IDE/PJT/WIFI_STATION_SERVER/main/http_server/http_server.c:305:18: warning: 'any_handler' defined but not used [-Wunused-function]
+  305 | static esp_err_t any_handler(httpd_req_t *req)
+      |                  ^~~~~~~~~~~
+D:/ESP32IDE/PJT/WIFI_STATION_SERVER/main/http_server/http_server.c:271:18: warning: 'echo_post_handler' defined but not used [-Wunused-function]
+  271 | static esp_err_t echo_post_handler(httpd_req_t *req)
+      |                  ^~~~~~~~~~~~~~~~~
+[3/7] Linking C static library esp-idf\main\libmain.a
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable WIFI_STATION_SERVER.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/ESP32IDE/PJT/WIFI_STATION_SERVER/build/WIFI_STATION_SERVER.bin
+[7/7] cmd.exe /C "cd /D D:\ESP32IDE\PJT\WIFI_STATION_SERVER\build\esp-idf\esptool_py && D:\ESP32IDE\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe D:/ESP32IDE/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/ESP32IDE/PJT/WIFI_STATION_SERVER/build/partition_table/partition-table.bin D:/ESP32IDE/PJT/WIFI_STATION_SERVER/build/WIFI_STATION_SERVER.bin"
+WIFI_STATION_SERVER.bin binary size 0xe2620 bytes. Smallest app partition is 0x100000 bytes. 0x1d9e0 bytes (12%) free.

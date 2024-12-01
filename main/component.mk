@@ -1,0 +1,1 @@
+COMPONENT_EMBED_TXTFILES := ../image/3.jpeg

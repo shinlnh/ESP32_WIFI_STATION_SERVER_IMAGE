@@ -1,0 +1,107 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec  1 2024 12:35:46[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=455a8h (284072) map[0m
+[0;32mI (202) esp_image: segment 1: paddr=000555d0 vaddr=3ffb0000 size=03ec0h ( 16064) load[0m
+[0;32mI (208) esp_image: segment 2: paddr=00059498 vaddr=40080000 size=06b80h ( 27520) load[0m
+[0;32mI (219) esp_image: segment 3: paddr=00060020 vaddr=400d0020 size=81cb4h (531636) map[0m
+[0;32mI (402) esp_image: segment 4: paddr=000e1cdc vaddr=40086b80 size=108f4h ( 67828) load[0m
+[0;32mI (440) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (440) boot: Disabling RNG early entropy source...[0m
+[0;32mI (452) cpu_start: Multicore app[0m
+[0;32mI (461) cpu_start: Pro cpu start user code[0m
+[0;32mI (461) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (461) app_init: Application information:[0m
+[0;32mI (464) app_init: Project name:     WIFI_STATION_SERVER[0m
+[0;32mI (470) app_init: App version:      1[0m
+[0;32mI (474) app_init: Compile time:     Dec  1 2024 12:35:39[0m
+[0;32mI (480) app_init: ELF file SHA256:  b8a4c5712...[0m
+[0;32mI (485) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (491) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (495) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (500) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (505) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (512) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (518) heap_init: At 3FFB8090 len 00027F70 (159 KiB): DRAM[0m
+[0;32mI (525) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (531) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (537) heap_init: At 40097474 len 00008B8C (34 KiB): IRAM[0m
+[0;32mI (545) spi_flash: detected chip: generic[0m
+[0;32mI (548) spi_flash: flash io: dio[0m
+[0;33mW (552) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (566) main_task: Started on CPU0[0m
+[0;32mI (576) main_task: Calling app_main()[0m
+[0;32mI (606) wifi station: ESP_WIFI_MODE_STA[0m
+[0;32mI (616) wifi:wifi driver task: 3ffc0088, prio:23, stack:6656, core=0[0m
+[0;32mI (626) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (626) wifi:wifi certification version: v7.0[0m
+[0;32mI (626) wifi:config NVS flash: enabled[0m
+[0;32mI (626) wifi:config nano formating: disabled[0m
+[0;32mI (636) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (636) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (646) wifi:Init management short buffer num: 32[0m
+[0;32mI (646) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (656) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (656) wifi:Init static rx buffer num: 10[0m
+[0;32mI (656) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (666) wifi_init: rx ba win: 6[0m
+[0;32mI (666) wifi_init: accept mbox: 6[0m
+[0;32mI (666) wifi_init: tcpip mbox: 32[0m
+[0;32mI (676) wifi_init: udp mbox: 6[0m
+[0;32mI (676) wifi_init: tcp mbox: 6[0m
+[0;32mI (686) wifi_init: tcp tx win: 5760[0m
+[0;32mI (686) wifi_init: tcp rx win: 5760[0m
+[0;32mI (686) wifi_init: tcp mss: 1440[0m
+[0;32mI (696) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (696) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (706) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;32mI (786) wifi:mode : sta (cc:7b:5c:99:a3:bc)[0m
+[0;32mI (786) wifi:enable tsf[0m
+[0;32mI (786) wifi station: wifi_init_sta finished.[0m
+[0;32mI (796) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (806) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (846) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (876) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (906) wifi:connected with SHIN, aid = 1, channel 11, BW20, bssid = 54:04:63:82:22:a1[0m
+[0;32mI (906) wifi:security: WPA2-PSK, phy: bgn, rssi: -39[0m
+[0;32mI (916) wifi:pm start, type: 1[0m
+
+[0;32mI (916) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (936) wifi:<ba-add>idx:0 (ifx:0, 54:04:63:82:22:a1), tid:7, ssn:0, winSize:64[0m
+[0;32mI (936) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1926) esp_netif_handlers: sta ip: 192.168.1.18, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (1926) wifi station: got ip:192.168.1.18[0m
+[0;32mI (1926) wifi station: connected to ap SSID:SHIN password:shin0412[0m
+[0;32mI (1936) example: Starting server on port: '80'[0m
+[0;32mI (1946) example: Registering URI handlers[0m
+[0;32mI (1946) main_task: Returned from app_main()[0m
+[0;32mI (6066) wifi:<ba-add>idx:1 (ifx:0, 54:04:63:82:22:a1), tid:6, ssn:2, winSize:64[0m
+[0;32mI (12106) wifi:<ba-del>idx:1, tid:6[0m
+[0;32mI (12116) wifi:<ba-add>idx:1 (ifx:0, 54:04:63:82:22:a1), tid:0, ssn:0, winSize:64[0m
+[0;32mI (12196) example: Found header => Host: 192.168.1.18[0m
+[0;32mI (12496) example: Request headers lost[0m
+[0;33mW (12626) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (12626) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m

@@ -1,0 +1,8 @@
+{
+    "idf.adapterTargetName": "esp32",
+    "files.associations": {
+        "http_server.h": "c",
+        "protocol_examples_common.h": "c",
+        "nvs_flash.h": "c"
+    }
+}

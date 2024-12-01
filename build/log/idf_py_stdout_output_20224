@@ -1,0 +1,77 @@
+[1/5] cmd.exe /C "cd /D D:\ESP32IDE\PJT\WIFI_STATION_SERVER\build\esp-idf\esptool_py && D:\ESP32IDE\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe D:/ESP32IDE/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/ESP32IDE/PJT/WIFI_STATION_SERVER/build/partition_table/partition-table.bin D:/ESP32IDE/PJT/WIFI_STATION_SERVER/build/WIFI_STATION_SERVER.bin"
+WIFI_STATION_SERVER.bin binary size 0xe2620 bytes. Smallest app partition is 0x100000 bytes. 0x1d9e0 bytes (12%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\ESP32IDE\PJT\WIFI_STATION_SERVER\build\bootloader\esp-idf\esptool_py && D:\ESP32IDE\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe D:/ESP32IDE/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/ESP32IDE/PJT/WIFI_STATION_SERVER/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+[2/3] cmd.exe /C "cd /D D:\ESP32IDE\Espressif\frameworks\esp-idf-v5.3.1\components\esptool_py && D:\ESP32IDE\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=D:/ESP32IDE/Espressif/frameworks/esp-idf-v5.3.1 -D SERIAL_TOOL=D:/ESP32IDE/Espressif/python_env/idf5.3_py3.11_env/Scripts/python.exe;;D:/ESP32IDE/Espressif/frameworks/esp-idf-v5.3.1/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/ESP32Iesptool.py --chip esp32 -p COM9 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 WIFI_STATION_SERVER.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port COM9
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: cc:7b:5c:99:a3:bc
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000f2fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 26752 bytes to 16359...
+Writing at 0x00001000... (100 %)
+Wrote 26752 bytes (16359 compressed) at 0x00001000 in 0.9 seconds (effective 242.0 kbit/s)...
+Hash of data verified.
+Compressed 927264 bytes to 633387...
+Writing at 0x00010000... (2 %)
+Writing at 0x000142b6... (5 %)
+Writing at 0x00018390... (7 %)
+Writing at 0x0001c418... (10 %)
+Writing at 0x00020647... (12 %)
+Writing at 0x00024859... (15 %)
+Writing at 0x00028b49... (17 %)
+Writing at 0x0002ce9e... (20 %)
+Writing at 0x00031186... (23 %)
+Writing at 0x000370e1... (25 %)
+Writing at 0x00043977... (28 %)
+Writing at 0x00049a45... (30 %)
+Writing at 0x0004f0d7... (33 %)
+Writing at 0x0005a4f3... (35 %)
+Writing at 0x0005fe0f... (38 %)
+Writing at 0x000656ae... (41 %)
+Writing at 0x0006b582... (43 %)
+Writing at 0x0007117b... (46 %)
+Writing at 0x000770f8... (48 %)
+Writing at 0x0007ca71... (51 %)
+Writing at 0x00082dfa... (53 %)
+Writing at 0x000880d0... (56 %)
+Writing at 0x0008d5d5... (58 %)
+Writing at 0x00092b79... (61 %)
+Writing at 0x0009826a... (64 %)
+Writing at 0x0009daab... (66 %)
+Writing at 0x000a379a... (69 %)
+Writing at 0x000a903f... (71 %)
+Writing at 0x000aec6b... (74 %)
+Writing at 0x000b4a43... (76 %)
+Writing at 0x000ba487... (79 %)
+Writing at 0x000c02e6... (82 %)
+Writing at 0x000c64b0... (84 %)
+Writing at 0x000cbd38... (87 %)
+Writing at 0x000d5b36... (89 %)
+Writing at 0x000dd443... (92 %)
+Writing at 0x000e32cc... (94 %)
+Writing at 0x000e9804... (97 %)
+Writing at 0x000eeb18... (100 %)
+Wrote 927264 bytes (633387 compressed) at 0x00010000 in 14.8 seconds (effective 500.3 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 328.0 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+DE/PJT/WIFI_STATION_SERVER/build -P D:/ESP32IDE/Espressif/frameworks/esp-idf-v5.3.1/components/esptool_py/run_serial_tool.cmake"
